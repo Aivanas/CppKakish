@@ -1,0 +1,3 @@
+C:/Users/richb/Desktop/Ваня еврей/Сплошные плюсы/Final project/cmake-build-debug/CMakeFiles/Final_project.dir
+C:/Users/richb/Desktop/Ваня еврей/Сплошные плюсы/Final project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/richb/Desktop/Ваня еврей/Сплошные плюсы/Final project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
