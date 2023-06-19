@@ -7,7 +7,7 @@
 #define FINAL_PROJECT_PERSON_H
 
 #include <regex>
-#include <Windows.h>
+//#include <Windows.h>
 #include <iostream>
 
 
@@ -32,6 +32,26 @@ private:
     string role;
     string login;
     string password_hash;
+public:
+     const string &getName() const;
+
+    void setName(const string &name);
+
+    unsigned short getAge() const;
+
+    void setAge(unsigned short age);
+
+    const string &getRole() const;
+
+    void setRole(const string &role);
+
+    const string &getLogin() const;
+
+    void setLogin(const string &login);
+
+    const string &getPasswordHash() const;
+
+    void setPasswordHash(const string &passwordHash);
 
 public:
     Person(string name, unsigned short age, Role role, string login, string password_hash);
