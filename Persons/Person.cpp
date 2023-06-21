@@ -31,12 +31,6 @@ Person::Person(string name, unsigned short age, Role role, string login, string 
 
 
 
-
-
-
-
-
-
 const string &Person::getName() const
 {
     return name;
@@ -85,6 +79,10 @@ const string &Person::getPasswordHash() const
 void Person::setPasswordHash(const string &passwordHash)
 {
     password_hash = passwordHash;
+}
+
+void Person::DeleteThis() {
+    delete this;
 }
 
 

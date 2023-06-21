@@ -5,18 +5,27 @@
 #ifndef FINAL_PROJECT_JSONWORK_H
 #define FINAL_PROJECT_JSONWORK_H
 #include "json.hpp"
-#include "Persons/Person.h"
 #include <iostream>
 #include <fstream>
+#include "Persons/Guest/Guest.h"
+#include "Persons/Person.h"
+#include "Products/Products.h"
+
+
+
 using json = nlohmann::json;
-string persons_file = "Persons.json";
+std::string products_file = "Products.json";
+
 
 class JSONWork
 {
 public:
-    static void Serialize(std::vector<Person>& Person_list);
-    static void Deserialize(Person& person);
-    static void Deserialize(std::string& person);
+    //void Serialize(std::vector<Person>& Person_list);
+    //void Deserialize(Person& persons);
+
+
+    void Serialize(std::vector<Products> list);
+    void Deserialize(std::vector<Products> list);
 
 };
 

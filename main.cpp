@@ -1,15 +1,38 @@
-#include "Persons/Person.h"
+//#include "Persons/Person.h"
+#include "Persons/Guest/Guest.h"
+#include "Products/Products.h"
+#include "Products/ProductsList.h"
+#include "JSONWork.h"
 #include <vector>
-//#include <Windows.h>
+#include <Windows.h>
 
 
 using namespace std;
 
 
 
-void LogIn(vector<Person>& list)
+
+int main()
 {
-    string login;
+    SetConsoleCP(1251);
+    setlocale(LC_ALL, "ru");
+
+    Products product = *new Products("kakish", 5);
+    ProductsList::productsList.push_back(product);
+    JSONWork JSOW;
+    JSOW.Serialize(ProductsList::productsList);
+    cout<<"SDSDSDDSDDS"<<endl;
+    JSOW.Deserialize(ProductsList::productsList);
+    cout<<"sdsd"<<endl;
+
+
+
+    return 0;
+}
+
+/*void LogIn(vector<Person>& list)
+{
+    string login;В
     string password;
     hash<string> hashier;
     cout << "Введите логин: " ;
@@ -50,19 +73,4 @@ void Registration(vector<Person>& list){
     password = std::to_string(hashier(password));
     Person person = *new Person(name, age, role, login, password);
     list.push_back(person);
-}
-
-int main()
-{
-    vector<Person> Persons_list;
-    //SetConsoleCP(1251);
-    setlocale(LC_ALL, "Russian");
-    //Registration(Persons_list);
-    //LogIn(Persons_list);
-    Role role = SysAdmin;
-    cout<<to_string(role)<<endl;
-
-
-    return 0;
-}
-
+}*/

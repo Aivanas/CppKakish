@@ -33,6 +33,7 @@ private:
     string login;
     string password_hash;
 public:
+    void DeleteThis();
      const string &getName() const;
 
     void setName(const string &name);
